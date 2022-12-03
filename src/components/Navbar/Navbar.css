@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .navbar{
@@ -87,10 +88,17 @@
 .nav-links:hover{
     background-color: #d3e4eb;
 }
-@media  screen and (max-width: 640px) {
+@media only screen and (max-width:782px) {
+    .nav-item{
+        padding-left: inherit;
+        padding-right: inherit;
+    }
+    
     .v-class-resp{
         display: none;
     }
+}
+@media  only screen and (max-width: 640px) {
     .searchbar{
         position: relative;
         padding-right: 0;
@@ -101,18 +109,18 @@
     }
     
 }
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .searchbar{
         display: none;
     }
     .searchicon{
-        color: var(--theme-topbar-item-color);
-        display: inline-flex;
+        color: black;
+        display: flex;
         align-items: center;
         padding: 0 calc(var(--su12) - var(--su2));
         text-decoration: none;
         white-space: nowrap;
-        position: relative;
+
 
     }
     .svg-icon{
@@ -122,8 +130,5 @@
     }
     .main-nav{
         justify-content: right;
-    }
-    .burger{
-        display: block;
     }
 }

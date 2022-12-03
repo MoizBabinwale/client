@@ -90,31 +90,21 @@
 .display-tags-time .display-time {
     font-size: 13px;
 }
-@media screen and (max-width:980px) {
+@media only screen and (max-width:980px) {
     .main-bar{
         width: -webkit-fill-available;
         float: inherit;
-        margin-right: 0px;
+        margin-right: 1px;
     }
-    /* .quesstions{
-        width: -webkit-fill-available;
-    }
-    .main-bar-header .ask-btn{
-        padding-top: 2%; */
-    /* .quesstions{
-        width: -webkit-fill-available;
-    }
-    .main-bar-header .ask-btn{
-        padding-top: 2%; */
+    .main-bar-header{
+        margin-top: 30px;
     
-    
-    
-
-    /* .display-question-container .display-votes-ans p{
-        display: flex;
     } */
     .ask-btn{
         padding: 0px;
+    }
+    .main-bar-header{
+        font-size: x-small;
     }
 }
     

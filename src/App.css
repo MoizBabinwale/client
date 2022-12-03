@@ -22,4 +22,11 @@
     .home-container-1{
         justify-content: center;
     }
+
+}
+@media only screen and (max-width:970px) {
+    .home-container-2{
+        width: calc(100% - 95px);
+    }
+    
 }
