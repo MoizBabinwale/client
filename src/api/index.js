@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'https://stackovrflow-client.onrender.com'})
+const API = axios.create({ baseURL: 'https://stackovrflow-server.onrender.com'})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('Profile')){
