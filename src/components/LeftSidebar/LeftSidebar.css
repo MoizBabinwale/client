@@ -5,34 +5,33 @@
     transform: translateZ(0);
     box-sizing: border-box;
     font-size: 13px;
+    margin-top: 10px;
 }
 .bar{
     height: 2px;
     width: 70%;
-    background-color: black;
-    display: block;
+    background-color: #000;
+    display: grid;
     padding: 2px;
     border-radius: 15px;
-    
-    transition: 0.4s ease;
+    transition: .4s ease;
 }
 #menu{
-    display: grid;
     width: 35px;
     height: 30px;
     margin-top: 61px;
     cursor: pointer;
     margin-left: 50%;
-    z-index: 100;
+    display: grid;
 }
 
 .side-nav{
     height: auto;
     max-width: 100%;
     position: sticky;
-    margin: 25px 0px;
+    margin: 15px 0px;
     padding: 20px 0px;
-}
+   }
 
 .side-nav-div{
     padding: 10px 0px;
@@ -40,7 +39,7 @@
 }
 
 .side-nav-div div{
-    padding-left: 10px;
+    padding-left: 10px 0px;
 }
 
 .side-nav-links{
@@ -68,6 +67,7 @@
             width: 90px;
             font-size: 9px;
         }
+       
         .side-nav{
             text-decoration: none;
             margin-top: 30px;
@@ -78,12 +78,70 @@
         padding-left: 10px;
         transition: 0.2s;
         margin-left: 5px;
+        display: block;
         }
 
 }
 @media only screen and (max-width:500px){
     .left-sidebar{
-        width: 70px;
+        width: 90px;
+        
 }
+.side-nav{
+text-decoration: none;
+margin-top: 75px;
+color: #3a3a3a;
+display: list-item;
+align-items: start;
+/* justify-content: start; */
+padding-left: -58px;
+transition: 0.2s;
+margin-left: 22px;
+border: 1px solid #3a3a3a!important;
+max-width: 165px;
+position: initial;
+margin-left: 5px;
+background: #f1e5bc;
+}
+#menu{
+    display: grid;
+}
+.bar{
+    display: block;
+}
+}
+@media only screen and (max-width:400px){
+    .left-sidebar{
+        width: 100%;
+        position: absolute;
+    }
 
+    .side-nav{
+        text-decoration: none;
+        margin-top: 75px;
+        color: #3a3a3a;
+        display: list-item;
+        align-items: start;
+        /* justify-content: start; */
+        padding-left: -58px;
+        transition: 0.2s;
+        margin-left: 22px;
+        border: 1px solid #3a3a3a!important;
+        max-width: 165px;
+        position: initial;
+        margin-left: 5px;
+        background: #f1e5bc;
+         
+    }
+    #menu{
+        display: grid;
+        position: absolute;
+        z-index: 4;
+        margin-left: 5px;
+        margin-top: 45px;
+    }
+    .bar{
+        display: block;
+    }
+    
 }

@@ -1,13 +1,25 @@
 import React from 'react'
 import './LeftSidebar.css'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
 import Globe from  '../../assets/Globe.svg'
 
 const LeftSidebar = () => {
+    const onClickMenu=()=>{
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
+        }
     return (
-            <div className='left-sidebar'>
-               <nav className='side-nav'>
+        <div className='left-sidebar'>
+            <button id='menu' onClick={onClickMenu}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+            </button>
+            <nav className='side-nav' id='myDIV'>
                 <NavLink to='/' className='side-nav-links' activeclassname='active'>
                     <p>Home</p>
                 </NavLink>
@@ -24,13 +36,12 @@ const LeftSidebar = () => {
                         <p>Users</p>
                     </NavLink>
                     <NavLink to='/DisplayPost' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
-                        <p>Post</p>
+                        <p>Posts</p>
                     </NavLink>
                 </div>
             </nav>
         </div>
     )
 }
-
 
 export default LeftSidebar

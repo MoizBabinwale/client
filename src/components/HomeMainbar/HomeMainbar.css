@@ -107,5 +107,15 @@
         font-size: x-small;
     }
 }
+@media only screen and(max-width:400px) {
+    .main-bar{
+        width: -webkit-fill-available;
+        float: inherit;
+        margin-right: 1px;
+        margin-top: 40px;
+    
+    }
+    
+}
     
 
