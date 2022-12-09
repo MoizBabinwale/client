@@ -19,7 +19,7 @@ const navigate = useNavigate()
     }
     return (
         <div className='main-bar'>
-        <button className="post-btn" onChange={checkAuth}>Post</button>
+        <button className="post-btn" onClick={checkAuth}>Post</button>
         <h1>Loading...</h1>
         </div>
 
