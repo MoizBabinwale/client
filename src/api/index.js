@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'https://stackovrflow-server.onrender.com'})
+const API = axios.create({ baseURL: 'http://localhost:3000'})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('Profile')){
@@ -19,6 +19,14 @@ export const voteQuestion = (id, value ) => API.patch(`/questions/vote/${id}`, {
 
 export const postAnswer = (id, noOfAnswers, answerBody, userAnswered ) => API.patch(`/answer/post/${id}`, { noOfAnswers, answerBody, userAnswered })
 export const deleteAnswer = (id, answerId, noOfAnswers) => API.patch(`/answer/delete/${id}`, { answerId, noOfAnswers})
+
+
+export const postImage = (imageData) => API.post('/images/Ask', imageData)
+export const getAllImage = () => API.get('/images/get');
+export const deleteImage = (id) => API.delete(`/images/delete/${id}`)
+
+export const post_Image = (id, noOfAnswers, imageBody, userAnswered ) => API.patch(`/image/post/${id}`, { noOfAnswers, imageBody, userAnswered })
+export const delete_Image= (id, imageId, noOfAnswers) => API.patch(`/image/delete/${id}`, { imageId, noOfAnswers})
 
 export const getAllUsers = () => API.get('/user/getAllUsers');
 export const updateProfile = (id, updateData) => API.patch(`/user/update/${id}`, updateData)

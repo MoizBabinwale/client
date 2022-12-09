@@ -1,0 +1,17 @@
+.main-bar .post-btn{
+padding: 10px 15px;
+border-radius: 4px;
+background-color: #009dff;
+color: white;
+border: none;
+text-decoration: none;
+transition: 0.3s;
+margin-top: 15px;
+display:flex;
+}
+.post-btn:hover{
+    background-color: #0086d8;
+}
+.post-btn{
+    padding: 0px;
+}

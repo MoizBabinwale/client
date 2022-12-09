@@ -8,6 +8,8 @@ import AskQuestion from './Pages/AskQuestion/AskQuestion'
 import DisplayQuestion from './Pages/Questions/DisplayQuestion'
 import Tags from './Pages/Tags/Tags'
 import Users from './Pages/Users/Users'
+import Post from './Pages/Post/Post'
+import DisplayPost from './Pages/Post/DisplayPost'
 import UserProfile from './Pages/UserProfile/UserProfile'
 
 const AllRoutes = () => {
@@ -21,6 +23,8 @@ const AllRoutes = () => {
             <Route path='/Tags' element={<Tags />} />
             <Route path='/Users' element={<Users />} />
             <Route path='/Users/:id' element={<UserProfile />} />
+            <Route path='/DisplayPost' element={<DisplayPost />} />
+            <Route path='/Post' element={<Post />} />
         </Routes>
     )
 }
