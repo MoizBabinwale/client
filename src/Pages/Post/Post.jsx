@@ -16,7 +16,7 @@ const Post = () => {
   const handleSubmit = (e) => {
       e.preventDefault()
     console.log({ imageTitle, imageBody, imageTags})
-      dispatch(uploadimage({ imageTitle, imageBody, imageTags}, navigate))
+      dispatch(uploadimage({ imageTitle, imageBody, imageTags}, navigate("/DisplayPost")))
   }
 
   const handleEnter = (e) => {

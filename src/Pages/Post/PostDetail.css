@@ -15,3 +15,16 @@ display:flex;
 .post-btn{
     padding: 0px;
 }
+@media only screen and (max-width:400px) {
+    .main-bar .post-btn {
+        padding: 10px 15px;
+        border-radius: 4px;
+        background-color: #009dff;
+        color: white;
+        border: none;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-top: 50px;
+        display: flex;
+}
+}

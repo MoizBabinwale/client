@@ -21,7 +21,7 @@ export const postAnswer = (id, noOfAnswers, answerBody, userAnswered ) => API.pa
 export const deleteAnswer = (id, answerId, noOfAnswers) => API.patch(`/answer/delete/${id}`, { answerId, noOfAnswers})
 
 
-export const postImage = (imageData) => API.post('/images/Ask', imageData)
+export const postImage = (imageData) => API.post('/images/post', imageData)
 export const getAllImage = () => API.get('/images/get');
 export const deleteImage = (id) => API.delete(`/images/delete/${id}`)
 
