@@ -122,7 +122,7 @@
     line-height: 18px;
     white-space: pre-line;
 }
-@media only screen and(max-width:980px) {
+@media only screen and (max-width:980px) {
     .question-details-page{
         width: 100%;
         float: left;
@@ -130,7 +130,7 @@
         padding: 0;
     }
 }
-@media only screen and(max-width:400px) {
+@media only screen and (max-width:400px) {
     .question-details-page{
     width: 100%;
     float: left;
